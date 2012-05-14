@@ -1,4 +1,12 @@
-Eleven41.Extensions
-===================
+# Eleven41.Extensions
 
-General purpose extension methods.
+Copyright (C) 2012, Eleven41 Software
+
+Eleven41.Extensions is a general purpose collection of extension methods.
+
+## LICENSE
+[MIT License](https://github.com/eleven41/Eleven41.Extensions/blob/master/LICENSE.md)
+
+## REQUIREMENTS
+
+* Visual Studio 2010
