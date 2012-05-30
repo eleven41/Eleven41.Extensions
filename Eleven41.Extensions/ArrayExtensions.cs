@@ -15,5 +15,64 @@ namespace Eleven41.Extensions
 				arr[i] = value;
 			}
 		}
+
+		// Copies a range of items from this array to a target array.
+		public static void CopyRangeTo<T>(this T[] self, int startIndex, int numItemsToCopy, T[] target)
+		{
+			if (startIndex > self.Length)
+				throw new ArgumentOutOfRangeException("startIndex");
+			if (numItemsToCopy < 0)
+				throw new ArgumentOutOfRangeException("numItemsToCopy");
+			if (numItemsToCopy > target.Length)
+				throw new ArgumentOutOfRangeException("numItemsToCopy");
+			if (numItemsToCopy > self.Length - startIndex)
+				throw new ArgumentOutOfRangeException("numItemsToCopy");
+
+			for (int i = 0; i < numItemsToCopy; ++i)
+			{
+				target[i] = self[startIndex + i];
+			}
+		}
+
+		// Copies a range of items from this array to a target array.
+		public static void CopyRangeTo<T>(this T[] self, int startIndex, int numItemsToCopy, T[] target, int targetStartIndex)
+		{
+			if (startIndex > self.Length)
+				throw new ArgumentOutOfRangeException("startIndex");
+			if (numItemsToCopy < 0)
+				throw new ArgumentOutOfRangeException("numItemsToCopy");
+			if (numItemsToCopy > target.Length - targetStartIndex)
+				throw new ArgumentOutOfRangeException("numItemsToCopy");
+			if (numItemsToCopy > self.Length - startIndex)
+				throw new ArgumentOutOfRangeException("numItemsToCopy");
+
+			for (int i = 0; i < numItemsToCopy; ++i)
+			{
+				target[targetStartIndex + i] = self[startIndex + i];
+			}
+		}
+
+		public static T[] SubArray<T>(this T[] self, int startIndex)
+		{
+			if (startIndex > self.Length)
+				throw new ArgumentOutOfRangeException("startIndex");
+
+			int numItems = self.Length - startIndex;
+			T[] results = new T[numItems];
+			self.CopyRangeTo(startIndex, numItems, results);
+			return results;
+		}
+
+		public static T[] SubArray<T>(this T[] self, int startIndex, int numItems)
+		{
+			if (startIndex > self.Length)
+				throw new ArgumentOutOfRangeException("startIndex");
+			if (numItems > self.Length - startIndex)
+				throw new ArgumentOutOfRangeException("numItems");
+
+			T[] results = new T[numItems];
+			self.CopyRangeTo(startIndex, numItems, results);
+			return results;
+		}
 	}
 }
