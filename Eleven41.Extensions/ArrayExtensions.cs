@@ -74,5 +74,13 @@ namespace Eleven41.Extensions
 			self.CopyRangeTo(startIndex, numItems, results);
 			return results;
 		}
+
+		// Create a single-element array from the object.
+		public static T[] ArrayFromSingle<T>(this T self)
+		{
+			T[] results = new T[1];
+			results[0] = self;
+			return results;
+		}
 	}
 }
