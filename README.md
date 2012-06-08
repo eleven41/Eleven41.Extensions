@@ -10,3 +10,27 @@ Eleven41.Extensions is a general purpose collection of extension methods.
 ## REQUIREMENTS
 
 * Visual Studio 2010
+
+## METHODS
+
+* arrays
+ * ArrayFromSingle
+ * CopyRangeTo
+ * Populate
+ * SubArray
+* string
+ * After
+ * EnsureNotNull
+ * SafeTrim
+ * Upto
+ * UptoAndIncluding
+* int
+ * MultipleOf
+ * NextMultipleOf
+* DateTime
+ * SafeToString
+* ICollection
+ * Add2
+ * CondAdd
+* IEnumerable
+ * EnsureNotNull
