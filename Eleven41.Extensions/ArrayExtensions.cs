@@ -78,6 +78,9 @@ namespace Eleven41.Extensions
 		// Create a single-element array from the object.
 		public static T[] ArrayFromSingle<T>(this T self)
 		{
+			if (self == null)
+				return null;
+
 			T[] results = new T[1];
 			results[0] = self;
 			return results;
