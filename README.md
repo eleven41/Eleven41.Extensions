@@ -1,15 +1,19 @@
 # Eleven41.Extensions
 
-Copyright (C) 2012, Eleven41 Software
+Copyright (C) 2013, Eleven41 Software
 
 Eleven41.Extensions is a general purpose collection of extension methods.
+
+## Get It on NuGet!
+
+	Install-Package Eleven41.Extensions
 
 ## LICENSE
 [MIT License](https://github.com/eleven41/Eleven41.Extensions/blob/master/LICENSE.md)
 
 ## REQUIREMENTS
 
-* Visual Studio 2010
+* Visual Studio 2012
 
 ## METHODS
 
