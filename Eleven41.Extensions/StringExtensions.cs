@@ -50,8 +50,12 @@ namespace Eleven41.Extensions
 		// Returns the left characters from the string.
 		public static string Left(this string self, int count)
 		{
+			if (count < 0)
+				throw new ArgumentException("count must not be less than 0", "count");
 			if (self == null)
 				return null;
+			if (count == 0)
+				return "";
 			if (self.Length <= count)
 				return self;
 			return self.Substring(0, count);
@@ -60,8 +64,12 @@ namespace Eleven41.Extensions
 		// Returns the right characters from the string.
 		public static string Right(this string self, int count)
 		{
+			if (count < 0)
+				throw new ArgumentException("count must not be less than 0", "count");
 			if (self == null)
 				return null;
+			if (count == 0)
+				return "";
 			if (self.Length <= count)
 				return self;
 			return self.Substring(self.Length - count, count);
