@@ -46,5 +46,25 @@ namespace Eleven41.Extensions
 				return "";
 			return self.Substring(index + 1);
 		}
+
+		// Returns the left characters from the string.
+		public static string Left(this string self, int count)
+		{
+			if (self == null)
+				return null;
+			if (self.Length <= count)
+				return self;
+			return self.Substring(0, count);
+		}
+
+		// Returns the right characters from the string.
+		public static string Right(this string self, int count)
+		{
+			if (self == null)
+				return null;
+			if (self.Length <= count)
+				return self;
+			return self.Substring(self.Length - count, count);
+		}
 	}
 }
