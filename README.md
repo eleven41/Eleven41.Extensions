@@ -28,6 +28,8 @@ Eleven41.Extensions is a general purpose collection of extension methods.
  * SafeTrim
  * Upto
  * UptoAndIncluding
+ * Left
+ * Right
 * int
  * MultipleOf
  * NextMultipleOf
