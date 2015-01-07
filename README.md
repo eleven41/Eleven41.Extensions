@@ -1,6 +1,6 @@
 # Eleven41.Extensions
 
-Copyright (C) 2013, Eleven41 Software
+Copyright (C) 2015, Eleven41 Software
 
 Eleven41.Extensions is a general purpose collection of extension methods.
 
@@ -13,7 +13,7 @@ Eleven41.Extensions is a general purpose collection of extension methods.
 
 ## REQUIREMENTS
 
-* Visual Studio 2012
+* Visual Studio 2013
 
 ## METHODS
 
