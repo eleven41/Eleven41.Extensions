@@ -52,7 +52,9 @@
   <ItemGroup>
     <Compile Include="StringTests\LeftTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringTests\RemoveTrailingTests.cs" />
     <Compile Include="StringTests\ReplaceTests.cs" />
+    <Compile Include="StringTests\RemoveLeadingTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Eleven41.Extensions\Eleven41.Extensions.csproj">

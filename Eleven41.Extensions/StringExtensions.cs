@@ -47,6 +47,32 @@ namespace Eleven41.Extensions
 			return self.Substring(index + 1);
 		}
 
+		public static string RemoveLeading(this string self, string startString)
+		{
+			if (String.IsNullOrEmpty(self))
+				return self;
+			if (String.IsNullOrEmpty(startString))
+				return self;
+
+			if (!self.StartsWith(startString))
+				return self;
+
+			return self.Substring(startString.Length);
+		}
+
+		public static string RemoveTrailing(this string self, string endString)
+		{
+			if (String.IsNullOrEmpty(self))
+				return self;
+			if (String.IsNullOrEmpty(endString))
+				return self;
+
+			if (!self.EndsWith(endString))
+				return self;
+
+			return self.Substring(0, self.Length - endString.Length);
+		}
+
 		// Returns the left characters from the string.
 		public static string Left(this string self, int count)
 		{
