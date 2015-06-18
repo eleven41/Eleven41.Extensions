@@ -12,7 +12,4 @@
     <copyright>Copyright (c) 2015, Eleven41 Software</copyright>
   </metadata>
 
-  <files>
-    <file src="bin\Release\Eleven41.Extensions.dll" target="lib/net35-client" />
-  </files>
 </package>
