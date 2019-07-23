@@ -1,6 +1,6 @@
 # Eleven41.Extensions
 
-Copyright (C) 2015, Eleven41 Software
+Copyright (C) 2019, Eleven41 Software
 
 Eleven41.Extensions is a general purpose collection of extension methods.
 
@@ -13,31 +13,31 @@ Eleven41.Extensions is a general purpose collection of extension methods.
 
 ## REQUIREMENTS
 
-* Visual Studio 2013
+* Visual Studio 2017
 
 ## METHODS
 
 * arrays
- * ArrayFromSingle
- * CopyRangeTo
- * Populate
- * SubArray
+  * ArrayFromSingle
+  * CopyRangeTo
+  * Populate
+  * SubArray
 * string
- * After
- * EnsureNotNull
- * SafeTrim
- * Upto
- * UptoAndIncluding
- * Left
- * Right
- * Replace
+  * After
+  * EnsureNotNull
+  * SafeTrim
+  * Upto
+  * UptoAndIncluding
+  * Left
+  * Right
+  * Replace
 * int
- * MultipleOf
- * NextMultipleOf
+  * MultipleOf
+  * NextMultipleOf
 * DateTime
- * SafeToString
+  * SafeToString
 * ICollection
- * Add2
- * CondAdd
+  * Add2
+  * CondAdd
 * IEnumerable
- * EnsureNotNull
+  * EnsureNotNull
