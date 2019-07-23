@@ -55,6 +55,7 @@
     <Compile Include="StringTests\RemoveTrailingTests.cs" />
     <Compile Include="StringTests\ReplaceTests.cs" />
     <Compile Include="StringTests\RemoveLeadingTests.cs" />
+    <Compile Include="StringTests\AsUtf8Stream_Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Eleven41.Extensions\Eleven41.Extensions.csproj">

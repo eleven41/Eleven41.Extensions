@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace Eleven41.Extensions
@@ -147,5 +145,18 @@ namespace Eleven41.Extensions
 			}
 			return self;
 		}
-	}
+
+        /// <summary>
+        /// Returns a stream containing the string bytes UTF8-encoded.
+        /// </summary>
+        /// <param name="self">String to convert.</param>
+        /// <returns>Stream object</returns>
+        public static System.IO.Stream AsUtf8Stream(this string self)
+        {
+            if (self == null)
+                throw new ArgumentNullException(nameof(self));
+
+            return new System.IO.MemoryStream(Encoding.UTF8.GetBytes(self));
+        }
+    }
 }
