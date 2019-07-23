@@ -31,6 +31,7 @@ Eleven41.Extensions is a general purpose collection of extension methods.
   * Left
   * Right
   * Replace
+  * AsUtf8String
 * int
   * MultipleOf
   * NextMultipleOf
@@ -41,3 +42,4 @@ Eleven41.Extensions is a general purpose collection of extension methods.
   * CondAdd
 * IEnumerable
   * EnsureNotNull
+  * SafeSequenceEqual
