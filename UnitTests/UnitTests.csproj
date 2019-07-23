@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="IEnumerableTests\SafeSequenceEqual_Tests.cs" />
     <Compile Include="StringTests\LeftTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringTests\RemoveTrailingTests.cs" />
